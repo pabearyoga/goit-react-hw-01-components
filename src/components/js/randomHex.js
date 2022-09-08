@@ -3,6 +3,5 @@ export default function getRandomHexColor() {
   if (randomHex === '#ffffff') {
     randomHex = `#000faa`;
   }
-  console.log(randomHex);
   return randomHex;
 }
