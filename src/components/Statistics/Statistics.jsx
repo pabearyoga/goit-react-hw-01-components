@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
-import getRandomHexColor from 'components/js/randomHex';
+import getRandomHexColor from 'randomHex';
 
 
 export default function Statistics({title, stats}) {
@@ -22,5 +22,5 @@ export default function Statistics({title, stats}) {
 
 Statistics.propTypes = {
     title: PropTypes.string.isRequired,
-    stats: PropTypes.array.isRequired
+    stats: PropTypes.arrayOf(PropTypes.exact({id: PropTypes.string.isRequired, label: PropTypes.string.isRequired, percentage: PropTypes.number.isRequired})).isRequired
  }
