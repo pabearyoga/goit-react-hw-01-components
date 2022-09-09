@@ -27,7 +27,6 @@
 }
 
 .name {
-  margin: 0;
   padding: 5px;
   font-weight: 700;
   font-size: 28px;
@@ -35,22 +34,18 @@
 }
 
 .tag {
-  margin: 0;
   padding: 5px;
   color: dimgrey;
 }
 
 .location {
-  margin: 0;
   padding: 5px;
   color: dimgrey;
 }
 
 .stats {
-  list-style-type: none;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 10px;
   border: 1px solid red;
   background-color: skyblue;
